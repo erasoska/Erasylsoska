@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥 Достарға арналған Пранктар 🔥</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function showPrank(friend) {
+            document.querySelectorAll('.prank').forEach(p => p.style.display = 'none');
+            document.getElementById(friend).style.display = 'block';
+        }
+        
+        function randomPrank() {
+            const pranks = ['nurtileu', 'zhaikal', 'bekasyl', 'dias', 'yusuf', 'mustafa', 'ilyas'];
+            const random = pranks[Math.floor(Math.random() * pranks.length)];
+            showPrank(random);
+        }
+
+        window.onload = function() {
+            randomPrank();
+        }
+    </script>
+</head>
+<body>
+    <h1>🔥 Достарға арналған Пранктар 🔥</h1>
+    <ul class="friends-list">
+        <li><a onclick="showPrank('nurtileu')">👨‍💻 Нұртілеу – Сен компьютеріңмен ойнама, ол қазір жарылып кетуі мүмкін! 😈</a></li>
+        <li><a onclick="showPrank('zhaikal')">⚡ Жәйқал – Қыздарға көп қарасаң да, сен тек супер пранкерсің! 💥</a></li>
+        <li><a onclick="showPrank('bekasyl')">☕ Бекасыл – Капучино бар, бірақ сен әлі де ұйықтап жатқандайсың! 😜</a></li>
+        <li><a onclick="showPrank('dias')">💀 Диас – Сіздің телефоныңызда вирус бар, оны тек мына код арқылы өшіре аласыз! 💀</a></li>
+        <li><a onclick="showPrank('yusuf')">🔒 Юсуф – Біз сенің барлық әлеуметтік желілеріңді бұғаттадық! 🔐</a></li>
+        <li><a onclick="showPrank('mustafa')">📡 Мұстафа – Қолтықтағы шаш өсті, енді барлығына көрсет!</a></li>
+        <li><a onclick="showPrank('ilyas')">🕵️‍♂️ Ильяс – Сен қара стильмен жүресің, бірақ ең бастысы – сен керемет!</a></li>
+    </ul>
+
+    <!-- Пранки -->
+    <div id="nurtileu" class="prank prank-error">💥 Нұртілеу, сенің компьютерың қазір жарылып кетуі мүмкін! 🎇</div>
+    <div id="zhaikal" class="prank prank-info">⚡ Жәйқал, қыздар бәрібір сені жақсы көреді, бірақ сенің пранк шеберлігің бәрінен күшті!</div>
+    <div id="bekasyl" class="prank prank-success">☕ Бекасыл, капучино бар! Бірақ сен әлі ұйықтап жатқандайсың! 😜</div>
+    <div id="dias" class="prank prank-warning">💀 Диас, сенің телефоныңда

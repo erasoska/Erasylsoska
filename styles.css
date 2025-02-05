@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 50px;
+    transition: background 0.5s, color 0.5s;
+}
+
+h1 {
+    color: #ff6347;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    animation: shake 0.5s infinite alternate;
+}
+
+@keyframes shake {
+    0% { transform: rotate(-2deg); }
+    100% { transform: rotate(2deg); }
+}
+
+.friends-list {
+    list-style: none;
+    padding: 0;
+}
+
+.friends-list li {
+    margin: 20px 0;
+}
+
+.friends-list a {
+    color: #00ffcc;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.friends-list a:hover {
+    color: #ff0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.prank {
+    display: none;
+    margin-top: 50px;
+    font-size: 2rem;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.prank-error {
+    background-color: #ff4747;
+    color: #fff;
+    animation: blink 0.5s infinite alternate;
+}
+
+@keyframes blink {
+    50% { background-color: black; }
+}
+
+.prank-info {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.prank-success {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.prank-warning {
+    background-color: #ffcc00;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.prank-lock {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.prank-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.prank-spy {
+    background-color: #17a2b8;
+    color: #fff;
+    font-family: 'Courier New', monospace;
+}
+
+.prank h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.prank a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.prank a:hover {
+    color: yellow;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
